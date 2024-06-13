@@ -1,0 +1,5 @@
+1. create/make changes to the file
+2. use git add "filename"
+3. git commit -m main
+4. git push 
+
