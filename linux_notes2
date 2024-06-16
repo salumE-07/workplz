@@ -1,0 +1,25 @@
+tree -d 
+tree -c 
+tree : visual output
+
+ls options...
+ls -a : lists all files, including hidden files
+ls --color: lists files with colorized input
+ls -d : list directory names, not content
+ls -l : use the long listing format
+ls -r : reverse the order
+ls -R : list files recursively
+ls -t : sort by time, most recent first 
+
+Permissions
+r : read / allows a file to be read / allows file names in the directory to be read
+w : write / allows a file to be modified / allows entries to be modified within the directory
+x : execute / allows the execution of the file / allows access to contents and metadata for entries
+Symbol / Category
+u - User, g - Group, o - Other, a - All
+
+Other commands
+groups - displays what group you're in
+id -Gn : displays group
+groups pat : 
+groups adminuser: display adminuser
