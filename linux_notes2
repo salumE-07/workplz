@@ -23,3 +23,24 @@ groups - displays what group you're in
 id -Gn : displays group
 groups pat : 
 groups adminuser: display adminuser
+
+chmod - change mode
+ugoa - user category: user, group, other, all
++-= : add / subtract / set permissions
+rwx = read,write,execute 
+
+example: chmod g+w,u-x sales.data
+change mode group adding write to file, sales.data
+and user gets execute taken away 
+
+Numeric Based Permissions
+r  /  w  /  x
+0  /  0  /  0   value for off
+1  /  1  /  1   binary value for on 
+4  /  2  /  1   base 10 value for on 
+
+Order HAS Meaning
+          U   G   X
+Symbolic  rwx r-x r--
+Binary    111 101 100
+Decimal   7   5   4
