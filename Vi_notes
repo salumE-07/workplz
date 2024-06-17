@@ -1,0 +1,49 @@
+Vi Notes
+
+Vi Line Mode
+:w - writes the file
+:w! - forces the file to be saved
+:q - quit
+:q! - quit without saving changes
+:wq! - write and quit 
+Lx - same as a :wq 
+
+:n - positions the cursor at line n 
+:$ - positions the cursor on the last line 
+:set nu - turn on line numbering 
+:set nonu - turn off line numbering
+
+:help [subcommand] Get help. 
+
+Vi Modes 
+Mode    / Key
+Command / Esc
+Insert  / i I a A 
+Line    / :
+
+Vi - repeating commands 
+5k = move up a line 5 times 
+ 80i<Text><ESC>=Insert<Text> 80 times 
+ 80i_<Esc>=Insert80"_"characters
+
+
+ Deleting Text 
+ x - delete a character 
+ dw - delete a word 
+ dd - delete a line 
+ D - delete from the current position 
+
+ Changing Text 
+ r - replace the current character 
+ cw - change the current word 
+cc - change the current line 
+c$ - change the text from the current position 
+C - same as c$ 
+~ reverses the case of a character 
+
+u - undo 
+ctrl R - redo 
+
+Vi - searching 
+/<pattern> start a forward search 
+?<pattern> start a reverse search 

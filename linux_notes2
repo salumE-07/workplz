@@ -44,3 +44,10 @@ Order HAS Meaning
 Symbolic  rwx r-x r--
 Binary    111 101 100
 Decimal   7   5   4
+
+
+find Options
+-mtime days : finds files that are days old
+-size num : finds file that are of size num
+-newer file : finds files that are newer than file
+-exec command {} \;
