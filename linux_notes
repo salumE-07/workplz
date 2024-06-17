@@ -46,6 +46,54 @@ sort options
 -r  - sort in reverse order 
 -u   - sort unique 
 
+#-------------------
 Creating a collection of file 
 tar [-] c|x|t f tarfile [pattern]
 create, extract or list contents of a tar archive using pattern if supplied
+
+#-------------------
+Compressing File to save space
+gzip - compress files
+gunzip - uncompress files 
+gzcat - concatenates compressed files
+zcat - concatenates compressed files 
+
+#-------------------
+Disk Usage
+du estimates file usage
+du -k display size in kilobytes
+du -h displays sizes in human readable format
+
+#-------------------
+Wildcards
+* - matches zero or more characters
+    *.txt
+    a* 
+    a*.txt 
+? - matches exactly one character 
+    ?.txt
+    a? 
+    a?.txt 
+
+[] - a character class 
+Matches any of the characters included between the brackets. Matches exactly one character.
+[aeiou]
+ca[nt]*
+    can 
+    cat 
+    candy 
+    catch 
+
+[!] - matches any of the caracters NOT included between the brackets. Matches exactly one character
+    [!aeiou]
+        baseball
+        cricket 
+
+Wilcards - Ranges
+[a-g]*
+[3-6]*
+
+#-------------------
+& - used with redirection to signal that a file descriptor is being used
+2>&1 - Combine stderr and standard output
+2>file - redirect standard error to a file 
