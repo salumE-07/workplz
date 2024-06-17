@@ -1,3 +1,51 @@
-Start of Linux Notes
-Part 1 
-....
+Basic Linux commands
+pwd - presents working directory
+cd - changes the current directory to dir
+ls - lists contents
+"ls -l" - lists contents of files
+cat - concatenates and displays files
+clear - clears screen
+man command - displays the online manual for command
+space - display the next page
+exit - to exit
+
+space - next page
+g - top of page
+G - bottom of page
+q - quit
+#-------------------
+Environment Variables
+echo $VAR_Name
+EV = PATH
+
+#-------------------
+Removing Files
+rm file - removes file 
+rm -r dir  - removes the directory and its contents recursively
+rm -f file   - force removal and never prompt for confirmation
+
+#-------------------
+Copying files
+cp source_file destination_file 
+cp -i 
+    run in interactive mode 
+cp -r source_directory destination
+
+#-------------------
+Moving / Renaming Files
+mv - move or rename files/directories
+mv source destination
+mv -i source destination
+mv filename directory
+
+#-------------------
+Sorting Files
+
+sort options
+-k F - sort by key. F is the field number 
+-r  - sort in reverse order 
+-u   - sort unique 
+
+Creating a collection of file 
+tar [-] c|x|t f tarfile [pattern]
+create, extract or list contents of a tar archive using pattern if supplied

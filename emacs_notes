@@ -1,0 +1,43 @@
+Emacs is more powerful than nano
+Emacs is an alternative to Vi 
+
+emacs [file] edit file 
+C-<char>    ctrl while pressing <char>
+M-<char>    "Meta" key (alt key) while pressing <char>
+M-<char>    Esc, then type <char>
+
+Emacs commands
+C-h     Help 
+C-x C-c     Exit 
+C-x C-s     Save the file 
+C-h t       Built in tutorial 
+C-h k <key>    Describe Key 
+
+Navigation
+C-p     previous line
+C-n     Next line 
+C-b     backward one character 
+C-f     forward one character 
+M-f     forward one word 
+M-b     backward one word 
+
+(C- = control, M- = Meta)
+
+C-a     go to the beginning of the line 
+C-e     go to the end of the line 
+M-<     go to the beginning of the file 
+M->     go to the end of the file 
+
+C-k = kill(cut)
+C-y = Yank (paste)
+C-x u = Undo 
+
+C-s     start a forward search 
+C-r     start a reverse search 
+
+
+Graphical Editors
+emacs - emacs has a graphical mode too
+gedit - the default text editor for gnome
+gvim - the graphical version of vim 
+kedit - the default text editor for the KDE
