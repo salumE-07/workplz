@@ -183,3 +183,47 @@ $ cat ~/.bash_profile
 export TZ="US/Central"
 
 #-------------------
+Processes
+ps - display process status 
+
+PS Options 
+-e = everything, all processes
+-f = full format listing
+-u username = display username's processes
+-p pid = display information for PID 
+
+Common PS commands 
+ps -e = display all processes
+ps -ef = display all processes, full
+ps -eH = display a process tree
+ps -e - - forest = display a process tree
+ps -u username = display user's processes
+
+background + foreground processes
+command & = start command in background
+ctrl-c = kill the foreground process
+ctrl-z = suspend the foreground process
+
+bg [%num]  = background a suspended process
+fg [%num] = foreground a background process
+kill = kill a process by job number or PID
+jobs [%num] = list jobs
+
+Killing Processes
+Ctrl-c = kills the foreground proc 
+kill [-sig] pid = send a signal to a process 
+kill -l = display a list of signals 
+
+kill 123
+kill -15 123
+kill - TERM 123  kill -9 123
+
+#-------------------
+Cron 
+- a time based job scheduling service
+ctrontab - a program to create,read, update, and delete your job schedules
+use cron to schedule and automate tasks
+crontab file - install a new crontab from file
+crontab -l = list your cron jobs
+crontab -e = edit your cron jobs
+crontab -r = remove all of your cron jobs
