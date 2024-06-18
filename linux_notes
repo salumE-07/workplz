@@ -97,3 +97,89 @@ Wilcards - Ranges
 & - used with redirection to signal that a file descriptor is being used
 2>&1 - Combine stderr and standard output
 2>file - redirect standard error to a file 
+
+#-------------------
+diff file1 file2    / compares two files
+sdiff file1 file2   / side by side comparison
+vimdiff file1 fil2 / hightlight differences in vim 
+
+#-------------------
+file file_name = display the file type 
+
+#-------------------
+Copying files over the Network 
+SCP - Secure copy 
+SFTP - ssh file transfer protocol 
+
+ftp host
+- start a file transfer session with host 
+
+#-------------------
+Customizing the Prompt with PS1
+
+\d - date in "weekday month date" format
+\h - hostname up to the first period 
+\H - hostname 
+\n - newline
+\t - current time in 24 hour HH:MM:SS format 
+\T - current time in 12 hour HH:MM:SS format 
+
+\@ current time in 12hr am/pm format 
+\A current time in 24hr HH:MM format 
+\u - username of the current user
+\w - current working directory 
+\W - basename of the current working directory 
+\$ - if the effective UID is 0, a #, otherwise a $
+
+#-------------------
+Aliases 
+- Shorcuts
+- Use for long commands 
+- Use for commands you type often
+
+Ex:
+Fix typos 
+- $ alias grpe = 'grep'
+Make linux behave like another OS 
+- $ alias cls = 'clear'
+
+Removing Aliases
+- unalias name = remove the "name" alias 
+- unalias -a = remove all aliases 
+
+Persisting Aliases 
+- add aliases to your personal initialization files 
+    - .bash_profile 
+
+#-------------------
+Environment Variables
+Name/Value pairs 
+Can change how an application behaves
+An example EV: 
+    - EDITOR=nano
+
+Viewing EVs:  
+    printenv HOME 
+    /home/jason 
+
+    echo $HOME 
+
+Creating EVs 
+Syntax: 
+    export VAR="value"
+
+ex:
+    export EDITOR="vi"
+    export TZ="US/Pacific"
+
+Removing EVs
+Syntax: 
+    unset VAR 
+Ex: 
+    unset TZ 
+
+Persisting EVs 
+$ cat ~/.bash_profile 
+export TZ="US/Central"
+
+#-------------------
