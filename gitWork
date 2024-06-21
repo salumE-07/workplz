@@ -3,3 +3,12 @@
 3. git commit -m main
 4. git push 
 
+cd airbnb directory
+pip install -r requirements.txt
+. .env/bin/activate / source .env/bin/activate 
+./run.sh
+deactivate to leave env 
+
+git clonse ssh key
+cd the directory given from the ssh key
+

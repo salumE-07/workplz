@@ -227,3 +227,81 @@ crontab file - install a new crontab from file
 crontab -l = list your cron jobs
 crontab -e = edit your cron jobs
 crontab -r = remove all of your cron jobs
+
+#-------------------
+su Command
+su [username] - changes user ID or becomes superuser
+su Options
+- a hyphen is used to provide an environment similar to what the user would expect had the user logged in directly
+-c command : specify a command to be executed
+
+whoami - displays the effective username
+
+sudo - executes a command as another user, typically the superuser
+
+Using Sudo
+sudo -l : lists available commands
+sudo command - run command as root
+sudo -u root command : same as above
+sudo -u user command : run as user
+sudo su : switch to the superuser account 
+sudo su - : switch to the superuser account with root's environment
+sudo su - username : switch to the username account
+sudo -s : start a shell
+sudo -u root -s : same as sudo -s
+sudo -u user -s : start a shell as user 
+visudo - edit the /etc/sudoers file
+
+#-------------------
+
+!N - repeat command line number N
+!! - repeat the previous command line
+!string - repeat the most recent command starting with "string" 
+
+!:N <Event> <Separator> <Word>
+! - Represents a command line (or event)
+    != the most recent command line
+    !=!!
+:N Represents a word on the command line
+    0=command, 1 = first argument, etc
+
+Searching Shell History
+Ctrl-r = reverse shell history search
+enter = execute the command
+arrows = change the command 
+Ctrl-g = cancel the search 
+
+#-------------------
+
+Terminal notes
+type python3 to go to python
+type exit() to go back to normal
+
+#-------------------
+
+*yum*
+yum search string - search for string
+yum info [package] - display info
+yum info "bash*" 
+yum install [-y] package - install package
+yum remove package - remove package
+yum upgrade [package] - update package
+
+#-------------------
+
+*dnf*
+same commands as yum (above)
+
+#-------------------
+rpm -qa 
+    lists al installed packages
+rpm -qf /path/to/file
+    list the file's package
+rpm -ql package
+    list the package's files
+rpm -ivh package .rpm
+    install the package 
+rpm -e package
+    erase (uninstall) the package
+
+#-------------------
